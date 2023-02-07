@@ -3,7 +3,7 @@ const { gql } = require('apollo-server')
 const typeDefs = gql`
     type Track{
         id:ID!
-        titlle:String!
+        title:String!
         author:Author!
         thumbnail:String
         length: Int
@@ -11,13 +11,13 @@ const typeDefs = gql`
     }
 
     type Author{
-        id:ID!
+        id:ID
         name:String!
         photo:String!
     }
 
     type Query{
-        trackForHome:[Track!]!
+        tracksForHome:[Track!]!
     }
 `
 module.exports = typeDefs
