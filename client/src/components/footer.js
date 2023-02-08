@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from '@emotion/styled';
-import { colors, ApolloIcon } from '../styles';
+import React from 'react'
+import styled from '@emotion/styled'
+import { colors, ApolloIcon } from '../styles'
 
 /**
  * Footer is useless component to make our app look a little closer to a real website!
@@ -13,8 +13,8 @@ const Footer = ({ children }) => {
         <ApolloIcon width="100px" height="40px" />
       </LogoContainer>
     </FooterContainer>
-  );
-};
+  )
+}
 
 export default Footer;
 
@@ -30,7 +30,7 @@ const FooterContainer = styled.div({
   padding: 20,
   backgroundColor: 'white',
   borderTop: `solid 1px ${colors.pink.light}`,
-});
+})
 
 const LogoContainer = styled.div({
   height: 40,
@@ -38,4 +38,4 @@ const LogoContainer = styled.div({
   svg: {
     height: 40,
   },
-});
+})

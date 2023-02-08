@@ -1,7 +1,7 @@
-import React from 'react';
-import { Header, Footer } from '../components';
-import styled from '@emotion/styled';
-import { widths, unit } from '../styles';
+import React from 'react'
+import { Header, Footer } from '../components'
+import styled from '@emotion/styled'
+import { widths, unit } from '../styles'
 
 /**
  * Layout renders the full page content:
@@ -16,10 +16,10 @@ const Layout = ({ fullWidth, children, grid }) => {
       </PageContainer>
       <Footer />
     </>
-  );
-};
+  )
+}
 
-export default Layout;
+export default Layout
 
 /** Layout styled components */
 const PageContainer = styled.div((props) => ({
@@ -33,4 +33,4 @@ const PageContainer = styled.div((props) => ({
   width: '100%',
   padding: props.fullWidth ? 0 : unit * 2,
   paddingBottom: unit * 5,
-}));
+}))

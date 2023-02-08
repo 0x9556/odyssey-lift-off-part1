@@ -13,3 +13,8 @@ server.listen().then(() => {
     📭  Query at http://localhost:4000
   `)
 })
+
+
+// server.listen().then(req => {
+//   console.log(req)
+// }) 
